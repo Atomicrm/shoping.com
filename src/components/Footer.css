@@ -1,0 +1,150 @@
+/* Footer.css */
+footer {
+  background-color: #fafafa;
+  padding: 40px 20px;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  border-top: 1px solid #e0e0e0;
+}
+
+footer h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+footer ul li:hover {
+  color: #ff3f6c; /* Highlight color on hover */
+}
+
+footer .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .app-download {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+footer .app-download img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+footer .app-download img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+footer .social-media {
+  display: flex;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+footer .social-media svg {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+footer .social-media svg:hover {
+  color: #ff3f6c; /* Highlight color on hover */
+}
+
+footer .guarantee-section {
+  margin-top: 20px;
+}
+
+footer .guarantee-section h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+footer .guarantee-section p {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Popular Searches Section */
+footer .popular-searches {
+  grid-column: 1 / -1; /* Span across all columns */
+  border-top: 1px solid #e0e0e0;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+footer .popular-searches h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer .popular-searches p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer .grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns for smaller screens */
+  }
+
+  footer h3 {
+    font-size: 13px;
+  }
+
+  footer ul li {
+    font-size: 12px;
+  }
+
+  footer .app-download img {
+    width: 100px; /* Smaller app store badges for mobile */
+  }
+
+  footer .guarantee-section h3,
+  footer .guarantee-section p {
+    font-size: 12px;
+  }
+
+  footer .popular-searches h3 {
+    font-size: 13px;
+  }
+
+  footer .popular-searches p {
+    font-size: 12px;
+  }
+}
+.p{
+  text-align: center;
+}
+@media (max-width: 480px) {
+  footer .grid {
+    grid-template-columns: 1fr; /* Single column for very small screens */
+  }
+}

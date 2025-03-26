@@ -1,0 +1,134 @@
+/* General Styles */
+.men-page {
+    padding: 20px;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+  }
+  
+  .page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Brand Grid Layout */
+  .brand-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns in one row */
+    gap: 20px; /* Spacing between cards */
+    padding: 0 10px;
+  }
+  
+  /* Brand Card Styles */
+  .brand-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .brand-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .brand-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .brand-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin: 10px 0 5px;
+  }
+  
+  .brand-discount {
+    font-size: 14px;
+    color: #ff3f6c;
+    font-weight: 500;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .brand-grid {
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for tablets */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .brand-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .brand-grid {
+      grid-template-columns: repeat(1, 1fr); /* 1 column for small mobile */
+    }
+  }
+
+  /* Categories Section */
+.categories-section {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+.categories-title {
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-item {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.category-item:hover {
+  transform: translateY(-5px);
+}
+
+.category-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.category-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  padding: 15px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
